@@ -300,6 +300,10 @@ function gameOver (message)
       .html( 'Você foi destruído<br>Clique para reiniciar' )
         .show();
   }
+
+  $('#canvas').on('click',function() {
+    document.location.reload();
+  });
 }
 
 
@@ -713,7 +717,6 @@ $canvas.addEventListener( 'mousedown', function (event)
         break;
       case 3:
         special();
-        return false;
         break;
     }
   }
@@ -724,3 +727,4 @@ $canvas.addEventListener( 'mousedown', function (event)
 $(document).on('contextmenu',function() {
   return false;
 });
+
