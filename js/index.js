@@ -301,7 +301,7 @@ function gameOver (message)
         .show();
   }
 
-  $('#canvas').on('click',function() {
+  $('#content').on('click',function() {
     document.location.reload();
   });
 }
