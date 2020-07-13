@@ -1,0 +1,159 @@
+body, html {
+  background-color: #757575;
+  font-family: Arial;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  overflow: hidden;
+}
+
+#content {
+  width: 720px;
+  height: 480px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  margin: auto;
+  user-select: none;
+  cursor: crosshair;
+  overflow: hidden;
+}
+
+#canvas {
+  position: absolute;
+  background-color: #50ebff;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  border: 1px solid #000;
+  margin: auto;
+  user-select: none;
+  cursor: crosshair;
+  overflow: hidden;
+}
+
+#gameover {
+  z-index: 2;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#fool {
+  z-index: 2;
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+
+#chao {
+  width: 100%;
+  height: 70px;
+  background-image: url(../img/hills-for-docs.png);
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.nave {
+  position: absolute;
+  border: 1px solid transparent;
+  top: 0px;
+  left: 0px;
+  background-size: 100%;
+  border-radius: 50%;
+  transition: .1s ease;
+}
+
+.inimigo {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border: 1px solid #000;
+  right: -100px;
+  border-radius: 50%;
+}
+
+.zigzag {
+  animation-name: zigzag;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.linear {
+  animation-name: linear;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.boss {
+  position: absolute;
+  border: 1px solid #000;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  animation-name: boss-movement;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier;
+}
+
+div[id^='bullet-'] {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: #000;
+  border: 1px solid #000;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  animation-name: shot;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+div[class^='enemy-bullet-'] {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: #000;
+  border: 1px solid #000;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  animation-name: boss-shot;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.player-hit {
+  border: 1px solid #fff !important;
+  box-shadow: 0 0 20px #fff, inset 0 0 50px #fff;
+}
+
+.you-destroyed {
+  animation-name: you-destroyed;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}

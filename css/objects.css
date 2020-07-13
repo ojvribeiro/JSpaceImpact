@@ -1,0 +1,18 @@
+body, html {
+  background-color: #757575;
+  font-family: Arial;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+canvas {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  margin: auto;
+  user-select: none;
+  cursor: crosshair;
+}

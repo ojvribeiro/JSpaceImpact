@@ -1,0 +1,68 @@
+@keyframes boss-movement {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 250px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes zigzag {
+  0% {
+    margin-top: 0px;
+  }
+  20% {
+    margin-top: 300px;
+  }
+  40% {
+    margin-top: 0px;
+  }
+  60% {
+    margin-top: 300px;
+  }
+  80% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 300px;
+    right: calc(100% + 60px);
+  }
+}
+
+
+@keyframes linear {
+  100% {
+    right: calc(100% + 60px);
+  }
+}
+
+@keyframes shot {
+  100% {
+    left: calc(100% + 200px);
+  }
+}
+
+@keyframes boss-shot {
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+@keyframes you-destroyed {
+  0% {
+    background: none;
+    transform: scale(1);
+  }
+  50% {
+    border: 1px solid #fff;
+    background: #fff;
+    box-shadow: 0 0 30px #ff0, inset 0 0 30px #ff0;
+  }
+  100% {
+    background: none;
+    transform: scale(1.5);
+  }
+}
